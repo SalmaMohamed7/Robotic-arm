@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Robot Gui by Maximilian Beck</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<script>
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDWH-5tsmTqT9aSGGc7sMQdChxj5T8AkR8",
+    authDomain: "car-dt.firebaseapp.com",
+    databaseURL: "https://car-dt.firebaseio.com",
+    projectId: "car-dt",
+    storageBucket: "car-dt.appspot.com",
+    messagingSenderId: "247124767692",
+    appId: "1:247124767692:web:a7ab28f8634c8923e86369",
+    measurementId: "G-JNM4QB882H"
+  };
+  
+  firebase.initializeApp(firebaseConfig)
+</script>
+  <script src="js/require.js" charset="utf-8"></script>
+  <!-- <script src="/socket.io/socket.io.js"></script> -->
+
+  <script src="vendor/three.js/Three.js"></script>
+  <script src="vendor/three.js/Detector.js"></script>
+  <script src="vendor/three.js/Stats.js"></script>
+
+  <script src="vendor/threex/THREEx.screenshot.js"></script>
+  <script src="vendor/threex/THREEx.FullScreen.js"></script>
+  <script src="vendor/threex/THREEx.WindowResize.js"></script>
+  <script src="vendor/three.js/OrbitControls.js"></script>
+  <script src="vendor/three.js/TransformControls.js"></script>
+  <script src="vendor/EventDispatcher.js"></script>
+  <script src="js/THREERobot.js"></script>
+
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- <header>
+    <nav>
+      <ul>
+        <li>asas</li>
+        <li>asas</li>
+      </ul>
+    </nav>
+  </header> -->
+  <!-- three.js container -->
+  <div id="container"></div>
+
+  <script type="text/javascript">
+
+    var debug = {}
+    requirejs.config({
+      // urlArgs: "bust=" + (new Date()).getTime(),
+      baseUrl: 'js',
+      paths: {
+        State: '../vendor/state/State',
+        Kinematic: 'InverseKinematic'
+      },
+    });
+
+    require(['Hmi'], function(Hmi) {
+      let hmi = new Hmi()
+    });
+  </script>
+  
+</body>
+
+</html>
