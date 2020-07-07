@@ -8,6 +8,33 @@ body {
 	font-family	: arial;
 	font-size	: 100%;
 }
+
+.button{
+	position: absolute;
+	top: 2%; 
+	left: 2%;
+	/* transform: translate(-50%,-50%);
+} */
+}
+
+.btn{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #fff;
+	transition: 0.4s ease;
+}
+ .btn:hover{
+	background-color: #fff;
+	color: black;
+ }
+ .active{
+	text-decoration: none;
+	padding: 5px 20px;
+	border: 1px solid #fff;
+	background-color: #fff;
+	color: black;
+}
 #info .top {
 	position	: absolute;
 	top		: 0px;
