@@ -12,8 +12,8 @@
  
 #define FIREBASE_HOST "car-dt.firebaseio.com" 
 #define FIREBASE_AUTH "QdjvffipvUgkhPl679Fs3BfCw2JErfkxNZLKIsXv" 
-#define WIFI_SSID "Ulm" 
-#define WIFI_PASSWORD "1471998ss" 
+#define WIFI_SSID "*****" 
+#define WIFI_PASSWORD "********" 
 
 int ledPin = 13;
 Servo servoA0;
